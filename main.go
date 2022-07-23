@@ -7,30 +7,28 @@ import (
 )
 
 func main() {
-	//stackItem := make(stack.Stack.items[int], 0)
-
-	stack2 := stack.NewStack[string]()
-	stack2.Push("1")
-	stack2.Push("2")
-	stack2.Push("3")
-	stack2.Print()
-	item, _ := stack2.Peek()
+	s := stack.NewStack[string]()
+	s.Push("1")
+	s.Push("2")
+	s.Push("3")
+	s.Print()
+	item, _ := s.Peek()
 	fmt.Println(item)
-	item, _ = stack2.Pop()
+	item, _ = s.Pop()
 	fmt.Println(item)
-	stack2.Print()
+	s.Print()
 
-	item, _ = stack2.Pop()
+	item, _ = s.Pop()
 	fmt.Println(item)
-	stack2.Print()
+	s.Print()
 
-	item, _ = stack2.Pop()
+	item, _ = s.Pop()
 	fmt.Println(item)
-	stack2.Print()
+	s.Print()
 
-	item, _ = stack2.Pop()
+	item, _ = s.Pop()
 	fmt.Println(item)
-	stack2.Print()
+	s.Print()
 
-	fmt.Println(stack2.IsEmpty())
+	fmt.Println(s.IsEmpty())
 }
